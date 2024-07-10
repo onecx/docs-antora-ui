@@ -1,0 +1,39 @@
+<div id="swagger-ui"></div>
+<script>
+  window.onload = function() {
+
+    var findReact = function(dom) {
+      for (var key in dom) {
+        if (key.startsWith("__reactInternalInstance$")) {
+          var compInternals = dom[key]._currentElement;
+          var compWrapper = compInternals._owner;
+          var comp = compWrapper._instance;
+          return comp;
+        }
+      }
+      return null;
+    };
+    // Build a system
+    const ui = SwaggerUIBundle({
+      url: "{{page.attributes.swagger-url}}",
+      dom_id: '#swagger-ui',
+      supportedSubmitMethods:[],
+      deepLinking: true,
+      presets: [
+        SwaggerUIBundle.presets.apis,
+        SwaggerUIStandalonePreset
+      ],
+      plugins: [
+        SwaggerUIBundle.plugins.DownloadUrl
+      ],
+      layout: "BaseLayout",
+      docExpansion: "list",
+      defaultModelsExpandDepth: 0,
+      onComplete: function() {
+        var schemeSelect = document.querySelector('.scheme-container select');
+        findReact(schemeSelect).setScheme('https');
+      },
+    })
+    window.ui = ui
+  }
+</script>
