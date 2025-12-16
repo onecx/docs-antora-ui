@@ -24,14 +24,24 @@ body {
 .navbar-brand {
   display: flex;
   flex: auto;
-  padding-left: 1rem;
 }
 
 .navbar-brand .navbar-item {
   color: var(--navbar-font-color);
 }
 
-.navbar-brand .navbar-item:first-child {
+.navbar-brand .navbar-item.logo {
+  align-self: center;
+  padding: 0;
+  height: calc(0.9 * var(--navbar-height));
+  width: calc(0.9 * var(--navbar-height));
+}
+
+.navbar-brand .navbar-item.logo img {
+  width: inherit;
+}
+
+.navbar-brand .navbar-item.title {
   align-self: center;
   padding: 0;
   font-size: calc(22 / var(--rem-base) * 1rem);
@@ -39,12 +49,9 @@ body {
   line-height: 1;
 }
 
-.navbar-brand .navbar-item:first-child a {
+.navbar-brand .navbar-item.title a {
   color: inherit;
   word-wrap: normal;
-}
-
-.navbar-brand .navbar-item:first-child :not(:last-child) {
   padding-right: 0.375rem;
 }
 
