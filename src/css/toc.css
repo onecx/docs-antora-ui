@@ -100,3 +100,32 @@
 .toc .toc-menu .is-hidden-toc {
   display: none !important;
 }
+
+.toc-footer {
+  margin-right: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.toc-footer a {
+  color: var(--toc-font-color);
+  display: block;
+  padding-top: 0.25rem;
+  text-decoration: none;
+  font-size: calc(15 / var(--rem-base) * 1rem);
+  line-height: var(--toc-line-height);
+  outline: none;
+}
+
+.toc-footer a:hover {
+  color: var(--link-font-color);
+}
+
+.toc-footer a:focus {
+  background: var(--panel-background);
+}
+
+@media screen and (min-width: 1024px) {
+  .toc-footer a {
+    font-size: calc(13.5 / var(--rem-base) * 1rem);
+  }
+}
