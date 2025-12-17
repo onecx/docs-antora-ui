@@ -2,7 +2,7 @@
   color: var(--toc-font-color);
 }
 
-.toc.sidebar .toc-menu {
+.toc.sidebar .toc-container {
   margin-right: 0.75rem;
   position: sticky;
   top: var(--toc-top);
@@ -102,14 +102,13 @@
 }
 
 .toc-footer {
-  margin-right: 0.75rem;
   margin-top: 0.25rem;
 }
 
 .toc-footer a {
   color: var(--toc-font-color);
   display: block;
-  padding-top: 0.25rem;
+  padding: 0.25rem 0;
   text-decoration: none;
   font-size: calc(15 / var(--rem-base) * 1rem);
   line-height: var(--toc-line-height);
