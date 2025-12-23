@@ -33,8 +33,8 @@
           <a class="navbar-link">Development</a>
           <div class="navbar-dropdown">
             <div class="navbar-item"><strong>Tooling</strong></div>
-            <a class="navbar-item" href="{{{or site.url siteRootPath}}}/documentation:onecx-local-env:index.adoc">Local Environment</a>
-            <a class="navbar-item" href="{{{or site.url siteRootPath}}}/documentation:onecx-nx-plugins:index.adoc">App Generator</a>
+            <a class="navbar-item" href="{{{relativize (url 'documentation:onecx-local-env:page$index.adoc')}}}">Local Environment</a>
+            <a class="navbar-item" href="{{{relativize (url 'documentation:onecx-nx-plugins:index.adoc')}}}">App Generator</a>
             <hr class="navbar-divider">
             <div class="navbar-item"><strong>Documentation</strong></div>
             <a class="navbar-item" href="{{{or site.url siteRootPath}}}/documentation:onecx-portal-ui-libs:index.adoc">UI Libraries</a>
