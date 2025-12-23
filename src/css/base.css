@@ -68,11 +68,13 @@ sup {
   top: -0.5em;
 }
 
-em em { /* stylelint-disable-line */
+em em {
+  /* stylelint-disable-line */
   font-style: normal;
 }
 
-strong strong { /* stylelint-disable-line */
+strong strong {
+  /* stylelint-disable-line */
   font-weight: normal;
 }
 
@@ -146,4 +148,58 @@ object[type="image/svg+xml"]:not([width]) {
   ::-webkit-scrollbar-thumb:hover {
     background-color: var(--scrollbar_hover-thumb-color);
   }
+}
+
+/* flexbox */
+.flex {
+  display: flex !important;
+}
+.flex-column {
+  flex-direction: column !important;
+}
+.flex-row {
+  flex-direction: row !important;
+}
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+
+/* gap */
+.gap-1 {
+  gap: 0.25rem !important;
+}
+.gap-2 {
+  gap: 0.5rem !important;
+}
+.gap-3 {
+  gap: 1rem !important;
+}
+.gap-4 {
+  gap: 1.5rem !important;
+}
+/* row gap */
+.row-gap-1 {
+  row-gap: 0.25rem !important;
+}
+.row-gap-2 {
+  row-gap: 0.5rem !important;
+}
+.row-gap-3 {
+  row-gap: 1rem !important;
+}
+.row-gap-4 {
+  row-gap: 1.5rem !important;
+}
+/* column gap */
+.column-gap-1 {
+  column-gap: 0.25rem !important;
+}
+.column-gap-2 {
+  column-gap: 0.5rem !important;
+}
+.column-gap-3 {
+  column-gap: 1rem !important;
+}
+.column-gap-4 {
+  column-gap: 1.5rem !important;
 }
