@@ -1,5 +1,6 @@
 :root {
   /* colors */
+  --color-onecx: #0D3650;
   --color-white: #fff;
   --color-smoke-10: #fefefe;
   --color-smoke-30: #fafafa;
@@ -36,16 +37,18 @@
   --scrollbar-thumb-color: var(--color-gray-10);
   --scrollbar_hover-thumb-color: var(--color-gray-30);
   /* navbar */
-  --navbar-background: var(--color-jet-80);
+  /* --navbar-background: var(--color-jet-80); */
+  --navbar-background: var(--color-onecx);
   --navbar-font-color: var(--color-white);
-  --navbar_hover-background: var(--color-black);
+  /* --navbar_hover-background: var(--color-black); */
+  --navbar_hover-background: var(--color-onecx);
   --navbar-button-background: var(--color-white);
   --navbar-button-border-color: var(--panel-border-color);
   --navbar-button-font-color: var(--body-font-color);
   --navbar-menu-border-color: var(--panel-border-color);
-  --navbar-menu-background: var(--color-white);
+  --navbar-menu-background: var(--color-smoke-70);
   --navbar-menu-font-color: var(--body-font-color);
-  --navbar-menu_hover-background: var(--color-smoke-50);
+  --navbar-menu_hover-background: var(--color-white);
   /* nav */
   --nav-background: var(--panel-background);
   --nav-border-color: var(--color-gray-10);
