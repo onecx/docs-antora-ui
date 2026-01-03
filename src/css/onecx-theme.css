@@ -14,6 +14,17 @@
 
   --color-success: #2e7d32;
   --color-info: #1976d2;
+
+  --onecx-caution-color: #802392;
+  --onecx-caution-color-dark: #5a1967;
+  --onecx-important-color: #e40046;
+  --onecx-important-color-dark: #b30036;
+  --onecx-note-color: #2d7dd2; 
+  --onecx-note-color-dark: #2464a8; 
+  --onecx-tip-color: #43b929;
+  --onecx-tip-color-dark: #2d7d1c;
+  --onecx-warning-color: #f70;
+  --onecx-warning-color-dark: #cc5f00;
 }
 /* Text */
 .text-important {

@@ -412,27 +412,27 @@
 
 .doc .admonitionblock.note .icon i::before {
   content: "\f05a"; /* info-circle */
-  background-color: #176dcf;
+  background-color: var(--onecx-note-color-dark);
 }
 
 .doc .admonitionblock.tip .icon i::before {
   content: "\f0eb"; /* lightbulb */
-  background-color: #41af46;
+  background-color: var(--onecx-tip-color-dark);
 }
 
 .doc .admonitionblock.important .icon i::before {
   content: "\f06a"; /* exclamation-circle */
-  background-color: #bd2828;
+  background-color: var(--onecx-important-color-dark);
 }
 
 .doc .admonitionblock.warning .icon i::before {
   content: "\f071"; /* triangle-exclamation */
-  background-color: #bc6c10;
+  background-color: var(--onecx-warning-color-dark);
 }
 
 .doc .admonitionblock.caution .icon i::before {
   content: "\f071"; /* triangle-exclamation */
-  background-color: #7e357a;
+  background-color: var(--onecx-caution-color-dark);
 }
 
 .doc .admonitionblock .icon i {
