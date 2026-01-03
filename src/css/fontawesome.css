@@ -1,0 +1,6 @@
+/*
+ * Font Awesome integration for Antora UI.
+ * This file pulls in the Font Awesome Free CSS from node_modules
+ * so the UI bundle includes the necessary styles and webfonts.
+ */
+@import "@fortawesome/fontawesome-free/css/all.min.css";

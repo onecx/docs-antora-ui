@@ -1,0 +1,41 @@
+/*!
+ * OneCX Theme CSS
+ */
+:root {
+  /* Variables */
+  --onecx-color: #0d3650;
+  --onecx-border-radius: 4px;
+  --onecx-admonition-label-font-weight: 400;
+  --onecx-admonition-background: var(--color-smoke-50);
+  --onecx-pre-background: var(--color-smoke-70);
+  --onecx-pre-border-color: var(--color-gray-10);
+  --onecx-navbar-background: var(--onecx-color);
+  --onecx-navbar-background-hover: var(--onecx-color);
+
+  --color-success: #2e7d32;
+  --color-info: #1976d2;
+
+  --onecx-caution-color: #802392;
+  --onecx-caution-color-dark: #5a1967;
+  --onecx-important-color: #e40046;
+  --onecx-important-color-dark: #b30036;
+  --onecx-note-color: #2d7dd2; 
+  --onecx-note-color-dark: #2464a8; 
+  --onecx-tip-color: #43b929;
+  --onecx-tip-color-dark: #2d7d1c;
+  --onecx-warning-color: #f70;
+  --onecx-warning-color-dark: #cc5f00;
+}
+/* Text */
+.text-important {
+  color: var(--important-color);
+}
+.text-note {
+  color: var(--note-color);
+}
+.text-tip {
+  color: var(--tip-color);
+}
+.text-warning {
+  color: var(--warning-color);
+}

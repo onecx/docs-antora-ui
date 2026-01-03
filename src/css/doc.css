@@ -357,6 +357,7 @@
 .doc .admonitionblock td.content {
   padding: 1rem 1rem 0.75rem;
   background: var(--admonition-background);
+  border-radius: var(--onecx-border-radius);
   width: 100%;
   word-wrap: anywhere;
 }
@@ -365,16 +366,15 @@
   position: absolute;
   top: 0;
   left: 0;
-  font-size: calc(15 / var(--rem-base) * 1rem);
-  padding: 0 0.5rem;
+  padding-right: 0.5rem;
   height: 1.25rem;
   line-height: 1;
-  font-weight: var(--admonition-label-font-weight);
   text-transform: uppercase;
   border-radius: 0.45rem;
   transform: translate(-0.5rem, -50%);
 }
 
+/* COLORS */
 .doc .admonitionblock.caution .icon {
   background-color: var(--caution-color);
   color: var(--caution-on-color);
@@ -400,6 +400,41 @@
   color: var(--warning-on-color);
 }
 
+/* ICONS */
+.doc .admonitionblock .icon i::before {
+  font-family: "Font Awesome 6 Free";
+  padding: 2px 0.5em;
+  height: 1.2rem;
+  line-height: 1;
+  border-top-left-radius: 0.45rem;
+  border-bottom-left-radius: 0.45rem;
+}
+
+.doc .admonitionblock.note .icon i::before {
+  content: "\f05a"; /* info-circle */
+  background-color: var(--onecx-note-color-dark);
+}
+
+.doc .admonitionblock.tip .icon i::before {
+  content: "\f0eb"; /* lightbulb */
+  background-color: var(--onecx-tip-color-dark);
+}
+
+.doc .admonitionblock.important .icon i::before {
+  content: "\f06a"; /* exclamation-circle */
+  background-color: var(--onecx-important-color-dark);
+}
+
+.doc .admonitionblock.warning .icon i::before {
+  content: "\f071"; /* triangle-exclamation */
+  background-color: var(--onecx-warning-color-dark);
+}
+
+.doc .admonitionblock.caution .icon i::before {
+  content: "\f071"; /* triangle-exclamation */
+  background-color: var(--onecx-caution-color-dark);
+}
+
 .doc .admonitionblock .icon i {
   display: inline-flex;
   align-items: center;
@@ -408,6 +443,10 @@
 
 .doc .admonitionblock .icon i::after {
   content: attr(title);
+  padding-left: 5px;
+  font-family: var(--body-font-family);
+  font-size: calc(15 / var(--rem-base) * 1rem);
+  font-weight: var(--admonition-label-font-weight);
 }
 
 .doc .imageblock,
@@ -747,6 +786,7 @@
 .doc .literalblock pre {
   background: var(--pre-background);
   box-shadow: inset 0 0 1.75px var(--pre-border-color);
+  border-radius: var(--onecx-border-radius);
   display: block;
   overflow-x: auto;
   padding: 0.875em;
@@ -947,7 +987,8 @@
   background: var(--kbd-background);
   border: 1px solid var(--kbd-border-color);
   border-radius: 0.25em;
-  box-shadow: 0 1px 0 var(--kbd-border-color), 0 0 0 0.1em var(--body-background) inset;
+  box-shadow: 0 1px 0 var(--kbd-border-color),
+    0 0 0 0.1em var(--body-background) inset;
   padding: 0.25em 0.5em;
   vertical-align: text-bottom;
   white-space: nowrap; /* effectively ignores hyphens setting */
