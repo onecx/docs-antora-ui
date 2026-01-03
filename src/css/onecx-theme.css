@@ -1,8 +1,8 @@
 /*!
- * OneCX Theme CSS Variables
+ * OneCX Theme CSS
  */
 :root {
-  /* onecx */
+  /* Variables */
   --onecx-color: #0d3650;
   --onecx-border-radius: 4px;
   --onecx-admonition-background: var(--color-smoke-50);
@@ -14,6 +14,7 @@
   --color-success: #2e7d32;
   --color-info: #1976d2;
 }
+/* Text */
 .text-danger {
   color: var(--color-danger);
 }
