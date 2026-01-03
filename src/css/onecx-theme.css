@@ -5,22 +5,26 @@
   /* Variables */
   --onecx-color: #0d3650;
   --onecx-border-radius: 4px;
+  --onecx-admonition-label-font-weight: 400;
   --onecx-admonition-background: var(--color-smoke-50);
   --onecx-pre-background: var(--color-smoke-70);
   --onecx-pre-border-color: var(--color-gray-10);
   --onecx-navbar-background: var(--onecx-color);
   --onecx-navbar-background-hover: var(--onecx-color);
-  --color-danger: #d32f2f;
+
   --color-success: #2e7d32;
   --color-info: #1976d2;
 }
 /* Text */
-.text-danger {
-  color: var(--color-danger);
+.text-important {
+  color: var(--important-color);
 }
-.text-success {
-  color: var(--color-success);
+.text-note {
+  color: var(--note-color);
 }
-.text-info {
-  color: var(--color-info);
+.text-tip {
+  color: var(--tip-color);
+}
+.text-warning {
+  color: var(--warning-color);
 }
