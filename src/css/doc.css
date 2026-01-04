@@ -425,12 +425,12 @@
 }
 
 .doc .admonitionblock.warning .icon i::before {
-  content: "\f7e4"; /* fire-flame-curved */
+  content: "\f071"; /* triangle-exclamation */
   background-color: var(--onecx-warning-color-dark);
 }
 
 .doc .admonitionblock.caution .icon i::before {
-  content: "\f071"; /* triangle-exclamation */
+  content: "\f7e4"; /* fire-flame-curved */
   background-color: var(--onecx-caution-color-dark);
 }
 
