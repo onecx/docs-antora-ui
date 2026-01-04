@@ -366,7 +366,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding-right: 0.5rem;
   height: 1.25rem;
   line-height: 1;
   text-transform: uppercase;
@@ -402,7 +401,7 @@
 
 /* ICONS */
 .doc .admonitionblock .icon i::before {
-  font-family: "Font Awesome 6 Free";
+  font-family: var(--icon-font-family);
   padding: 2px 0.5em;
   height: 1.2rem;
   line-height: 1;
@@ -426,7 +425,7 @@
 }
 
 .doc .admonitionblock.warning .icon i::before {
-  content: "\f071"; /* triangle-exclamation */
+  content: "\f7e4"; /* fire-flame-curved */
   background-color: var(--onecx-warning-color-dark);
 }
 
@@ -443,7 +442,7 @@
 
 .doc .admonitionblock .icon i::after {
   content: attr(title);
-  padding-left: 5px;
+  padding: 0 0.5rem;
   font-family: var(--body-font-family);
   font-size: calc(15 / var(--rem-base) * 1rem);
   font-weight: var(--admonition-label-font-weight);
@@ -987,8 +986,7 @@
   background: var(--kbd-background);
   border: 1px solid var(--kbd-border-color);
   border-radius: 0.25em;
-  box-shadow: 0 1px 0 var(--kbd-border-color),
-    0 0 0 0.1em var(--body-background) inset;
+  box-shadow: 0 1px 0 var(--kbd-border-color) 0 0 0 0.1em var(--body-background) inset;
   padding: 0.25em 0.5em;
   vertical-align: text-bottom;
   white-space: nowrap; /* effectively ignores hyphens setting */

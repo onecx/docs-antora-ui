@@ -10,6 +10,9 @@
   "engines": {
     "node": ">= 8.0.0"
   },
+  "scripts": {
+    "build": "npx gulp lint && npx gulp build"
+  },
   "browserslist": [
     "last 2 versions"
   ],
