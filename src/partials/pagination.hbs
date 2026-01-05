@@ -1,15 +1,18 @@
-{{#unless (eq page.attributes.pagination undefined)}}
+{{!-- Render pagination only if :pagination: is set on the current page (page- prefix is dropped) --}}
+{{#unless (eq (lookup page.attributes 'pagination') undefined)}}
 {{#if (or page.previous page.next)}}
 <nav class="pagination">
+  <!-- Switch page context to previous page -->
   {{#with page.previous}}
-    {{#unless page.attributes.page-hide-prev}}
+    <!-- Check attributes in page before (parent scope) -->
+    {{#if (eq (lookup ../page.attributes 'hide-prev') undefined)}}
       <span class="prev"><a href="{{{relativize ./url}}}">{{{./content}}}</a></span>
-    {{/unless}}
+    {{/if}}
   {{/with}}  
   {{#with page.next}}
-    {{#unless page.attributes.page-hide-next}}
+    {{#if (eq (lookup ../page.attributes 'hide-next') undefined)}}
       <span class="next"><a href="{{{relativize ./url}}}">{{{./content}}}</a></span>
-    {{/unless}}
+    {{/if}}
   {{/with}}
 </nav>
 {{/if}}
