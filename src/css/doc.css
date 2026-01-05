@@ -402,7 +402,7 @@
 /* ICONS */
 .doc .admonitionblock .icon i::before {
   font-family: var(--icon-font-family);
-  padding: 2px 0.5em;
+  padding: 2px 0.4em;
   height: 1.2rem;
   line-height: 1;
   border-top-left-radius: 0.45rem;
