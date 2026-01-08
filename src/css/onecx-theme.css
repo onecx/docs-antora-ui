@@ -33,17 +33,17 @@
 
 /* Text */
 .text-important {
-  color: var(--important-color);
+  color: var(--onecx-important-color);
 }
 
 .text-note {
-  color: var(--note-color);
+  color: var(--onecx-note-color);
 }
 
 .text-tip {
-  color: var(--tip-color);
+  color: var(--onecx-tip-color);
 }
 
 .text-warning {
-  color: var(--warning-color);
+  color: var(--onecx-warning-color);
 }
