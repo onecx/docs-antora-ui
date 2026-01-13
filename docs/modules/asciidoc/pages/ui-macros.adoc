@@ -1,0 +1,20 @@
+= UI Macros (Missing Page Stub)
+
+Sorry, the requested page was not found in this documentation set.
+
+This page exists as a stub to satisfy cross-references from the Antora starter documentation.
+
+== Button
+[[button]]
+
+Placeholder section for the `#button` fragment.
+
+== Keybinding
+[[keybinding]]
+
+Placeholder section for the `#keybinding` fragment.
+
+== Menu
+[[menu]]
+
+Placeholder section for the `#menu` fragment.
