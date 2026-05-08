@@ -477,6 +477,16 @@
   vertical-align: middle;
 }
 
+.doc .imageblock .mermaid {
+  overflow-x: auto;
+}
+
+.doc .imageblock .mermaid svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .doc .image:not(.left):not(.right) > img {
   margin-top: -0.2em;
 }
